@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="dist/css/main.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- By help of manipulating main div will be centered  -->
+    <main>
+      <!-- And in this div I will have main content -->
+      <div class="main-div">
+        <!-- 2 side by side div -->
+        <div class="result-box">
+          <div class="result-box-div">
+            <h2>Your Result</h2>
+            <div>
+              <h3>76</h3>
+              <p>of 100</p>
+            </div>
+            <h4>Great</h4>
+            <p class="message">
+              You scored higher than 65% of <br />
+              the people who have taken <br />
+              these tests.
+            </p>
+          </div>
+        </div>
+
+        <div class="summary-box">
+          <div class="summary-box-div">
+            <h3>Summary</h3>
+            <div class="rating-paragrph btn-shape red">
+              <p>
+                <span><img src="assets/images/icon-reaction.svg" alt="" /></span
+                ><span class=>Reaction</span><span class="scored"><b>80</b> <b>/ 100</b></span>
+              </p>
+            </div>
+            <div class="rating-paragrph btn-shape yellow">
+              <p>
+                <span><img src="assets/images/icon-memory.svg" alt="" /></span><span >Memory</span
+                ><span class="scored"><b>92</b>  <b>/ 100</b></span>
+              </p>
+            </div>
+            <div class="rating-paragrph btn-shape green">
+              <p>
+                <span><img src="assets/images/icon-verbal.svg" alt="" /></span><span>Verbal</span
+                ><span class="scored"><b>61</b>  <b>/ 100</b></span>
+              </p>
+            </div>
+            <div class="rating-paragrph btn-shape blue">
+              <p>
+                <span><img src="assets/images/icon-visual.svg" alt="" /></span><span>Visual</span
+                ><span class="scored"><b>72</b>   <b>/ 100</b></span>
+              </p>
+            </div>
+            <div class="btn-box">
+              <button>Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Iosebi</a>.
+    </div>
+  </body>
+</html>

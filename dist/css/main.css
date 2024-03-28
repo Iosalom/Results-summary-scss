@@ -1,0 +1,179 @@
+@import 'https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  background: hsl(221, 100%, 96%);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .main-div {
+  display: flex;
+}
+main .main-div .result-box {
+  border-radius: 40px;
+  text-align: center;
+  background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  max-width: 400px;
+}
+main .main-div .result-box h2 {
+  color: hsl(241, 100%, 89%);
+}
+main .main-div .result-box .result-box-div {
+  padding: 40px;
+  margin-bottom: 10px;
+}
+main .main-div .result-box .result-box-div div {
+  margin-top: 30px;
+  background: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  display: inline-block;
+  padding: 45px 60px;
+  border-radius: 50%;
+}
+main .main-div .result-box .result-box-div div h3 {
+  color: hsl(0, 0%, 100%);
+  font-size: 60px;
+  font-weight: 800;
+}
+main .main-div .result-box .result-box-div div p {
+  margin: 0;
+  font-size: 18px;
+  color: hsl(241, 100%, 89%);
+}
+main .main-div .result-box .result-box-div h4 {
+  color: hsl(0, 0%, 100%);
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 32px;
+}
+main .main-div .result-box .result-box-div .message {
+  color: hsl(241, 100%, 89%);
+  margin-top: 20px;
+  font-weight: 500;
+  padding: 0 40px;
+}
+main .main-div .summary-box {
+  border-radius: 40px;
+  max-width: 400px;
+  background: hsl(0, 0%, 100%);
+}
+main .main-div .summary-box .summary-box-div {
+  padding: 40px;
+  min-width: 400px;
+}
+main .main-div .summary-box .summary-box-div h3 {
+  font-size: 24px;
+  color: hsl(224, 30%, 27%);
+}
+main .main-div .summary-box .summary-box-div .rating-paragrph {
+  margin-top: 20px;
+}
+main .main-div .summary-box .summary-box-div .rating-paragrph p {
+  text-align: start;
+  font-size: 18px;
+}
+main .main-div .summary-box .summary-box-div .rating-paragrph p span:nth-child(1) {
+  position: relative;
+  top: 4px;
+}
+main .main-div .summary-box .summary-box-div .rating-paragrph p span:nth-child(2) {
+  margin-left: 20px;
+}
+main .main-div .summary-box .summary-box-div .rating-paragrph p span:nth-child(3) {
+  float: right;
+  position: relative;
+  top: 3px;
+}
+main .main-div .summary-box .summary-box-div .rating-paragrph .scored b {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+main .main-div .summary-box .summary-box-div .rating-paragrph .scored b:nth-child(2) {
+  color: hsla(224, 30%, 27%, 0.5);
+}
+main .main-div .summary-box .summary-box-div .btn-shape {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+}
+main .main-div .summary-box .summary-box-div .red {
+  background: hsla(0, 100%, 67%, 0.1);
+}
+main .main-div .summary-box .summary-box-div .red span:nth-child(2) {
+  color: hsl(0, 100%, 67%);
+}
+main .main-div .summary-box .summary-box-div .yellow {
+  background: hsla(39, 100%, 56%, 0.1);
+}
+main .main-div .summary-box .summary-box-div .yellow span:nth-child(2) {
+  color: hsl(39, 100%, 56%);
+}
+main .main-div .summary-box .summary-box-div .green {
+  background: hsla(166, 100%, 37%, 0.1);
+}
+main .main-div .summary-box .summary-box-div .green span:nth-child(2) {
+  color: hsl(166, 100%, 37%);
+}
+main .main-div .summary-box .summary-box-div .blue {
+  background: hsla(234, 85%, 45%, 0.1);
+}
+main .main-div .summary-box .summary-box-div .blue span:nth-child(2) {
+  color: hsl(234, 85%, 45%);
+}
+main .main-div .summary-box .btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+main .main-div .summary-box .btn-box button {
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  background: hsl(224, 30%, 27%);
+  border: none;
+  border-radius: 50px;
+  height: 50px;
+}
+main .main-div .summary-box .btn-box button:hover {
+  background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+@media (max-width: 878px) {
+  main .main-div {
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  main .main-div .summary-box {
+    max-width: 300px;
+  }
+  main .main-div .summary-box .summary-box-div {
+    min-width: 300px;
+  }
+  main .main-div .result-box {
+    max-width: 300px;
+  }
+  main .main-div .result-box .result-box-div {
+    min-width: 300px;
+  }
+}/*# sourceMappingURL=main.css.map */
