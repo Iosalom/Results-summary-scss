@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+}
+
+.bg-gradient {
+  background: linear-gradient(to top left, hsl(353, 100%, 62%), hsl(13, 100%, 72%)), url(../images/bg-pattern-intro-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  border-bottom-left-radius: 100px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 10%;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  z-index: -1;
+}
+header nav {
+  margin-left: 80px;
+}
+header nav .list-box .list-section {
+  display: inline-block;
+  position: relative;
+}
+header nav .list-box .list-section a {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  padding: 20px 25px;
+}
+header nav .list-box .list-section a:hover {
+  -webkit-text-decoration: underline 2px solid hsl(0, 0%, 100%);
+          text-decoration: underline 2px solid hsl(0, 0%, 100%);
+}
+header nav .list-box .list-section:hover .dropdown {
+  display: block;
+}
+header nav .list-box .list-section .dropdown {
+  width: 120%;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  background: hsl(0, 0%, 100%);
+  font-weight: 400;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px;
+}
+header nav .list-box .list-section .dropdown a {
+  color: hsl(207, 13%, 34%);
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  display: block;
+}
+header nav .list-box .list-section .dropdown a:first-child {
+  padding-bottom: 20px;
+}
+header nav .list-box .list-section .dropdown a:hover {
+  color: hsl(240, 10%, 16%);
+}
+header nav .list-box .list-section li {
+  display: block;
+}
+header .btn {
+  display: flex;
+  margin-left: auto;
+}
+header .btn li .sign-up-btn {
+  border: none;
+  min-width: 169.3px;
+  height: 50px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 18px;
+  background: hsl(0, 0%, 100%);
+  color: hsl(353, 100%, 62%);
+}
+header .btn li .sign-up-btn:hover {
+  background: hsla(0, 0%, 100%, 0.25);
+  color: hsl(0, 0%, 100%);
+}
+header .btn li .login-btn {
+  border: none;
+  min-width: 169.3px;
+  height: 50px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 18px;
+  background: transparent;
+  color: hsl(0, 0%, 100%);
+  border: none;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  padding: 50px 0 120px;
+  z-index: 1;
+}
+.header-content .content-in-header {
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.header-content .content-in-header h1 {
+  font-size: 54px;
+}
+.header-content .content-in-header p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.header-content .content-in-header div {
+  margin-top: 50px;
+}
+.header-content .content-in-header div button {
+  margin: 0 10px;
+}
+.header-content .content-in-header div .start-for-free-btn {
+  border: none;
+  min-width: 169.3px;
+  height: 50px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  background: hsl(0, 0%, 100%);
+  color: hsl(353, 100%, 62%);
+}
+.header-content .content-in-header div .start-for-free-btn:hover {
+  background: hsla(0, 0%, 100%, 0.25);
+  color: hsl(0, 0%, 100%);
+}
+.header-content .content-in-header div .learn-more-btn {
+  border: none;
+  min-width: 169.3px;
+  height: 50px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 18px;
+  border: 2px solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+  background: transparent;
+}
+.header-content .content-in-header div .learn-more-btn:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(353, 100%, 62%);
+}/*# sourceMappingURL=main.css.map */
